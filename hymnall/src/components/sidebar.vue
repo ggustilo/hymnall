@@ -1,8 +1,9 @@
 <template>
   <div id="sidebar">
+    <h1 id="title">{{ msg }}</h1>
     <ul>
         <li v-for="hymn in hymns">
-            {{ hymn.Title }}
+            <a>{{ hymn.Title }}</a>
         </li>
     </ul>
   </div>
@@ -33,20 +34,26 @@
 </script>
 
 <style lang="scss">
+
+#title {
+    padding-left: 10px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 #sidebar {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
   color: #2c3e50;
-  background-color: whitesmoke;
+  background-color: #F5FFFA;
   width: 20%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
   overflow-x: hidden;
-  padding-top: 75px;
   padding-left: 15px;
 }
 
@@ -61,6 +68,6 @@ li {
 }
 
 a {
-  color: #42b983;
+  color: #2c3e50;
 }
 </style>

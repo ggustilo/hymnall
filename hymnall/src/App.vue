@@ -35,12 +35,14 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: left;
+  line-height: 200%;
   color: #2c3e50;
   margin-left: 30px;
   margin-top: 30px;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-weight: normal;
+  margin: 0px;
 }
 </style>

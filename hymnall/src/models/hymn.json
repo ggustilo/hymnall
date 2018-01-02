@@ -1,0 +1,17 @@
+{ 
+    "Title": "Hymn1" ,
+    "Creator": "ggustilo",
+    "DateCreated": "12/21/17",
+    "LastUpdated": "12/21/17",
+    "Version": "1",
+    "Notes": "Hymn written in 18th century by Theodora of Crete.",
+    "Hymn": {
+        "key": 1234,
+        "userkey": "TH2017",
+        "Title": "Ode to a Sunbeam",
+        "Description": "Iambic pentameter in original Greek by Theodora of Crete.",
+        "Tags": ["Greek", "18th Century", "Theodora of Crete"],
+        "First line": "O shining star of heaven, for thee we weep anon,",
+        "Content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel nunc ac purus rhoncus iaculis. Fusce odio augue, eleifend eu mauris eu, tincidunt gravida tellus. Nullam et sollicitudin metus. Nullam et nibh vel ipsum euismod elementum ut ut nunc. Sed feugiat sem id felis vestibulum imperdiet. Ut tempus dapibus gravida. Donec vel nisi nec erat condimentum vulputate. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc eleifend eros euismod orci rhoncus commodo. Nullam vestibulum finibus mauris, eu dignissim sapien mollis in. Pellentesque sollicitudin, ipsum ut molestie accumsan, risus nulla venenatis purus, non finibus libero ipsum sed elit. Vestibulum ultricies ut sem in posuere. Vestibulum gravida accumsan elit, non posuere ex fermentum eget. Aliquam vitae volutpat arcu. Nulla facilisi."
+    }
+}

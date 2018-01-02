@@ -11,8 +11,23 @@
 <script>
   export default {
     name: '#sidebar',
-    props: ['hymns'],
     data () {
+      return {
+        msg: 'Hymnall',
+        hymns: this.getHymns()
+      }
+    },
+    methods: {
+      getHymns: () => {
+        return [
+              { 
+                  Title: "Hymn1" 
+              },
+              { 
+                  Title: "Hymn2" 
+              }
+          ]
+      }
     }
   }
 </script>

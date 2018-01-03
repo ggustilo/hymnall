@@ -1,10 +1,10 @@
 <template>
   <div id="main">
-    <form>
+    <form name="hymn">
         <fieldset>
             <h2>Document Info</h2>
             Version: {{ version }} <br>
-            <span class="floater-left">Title: <input v-model="title" type="text"><br>
+            <span class="floater-left">Title: <input v-model="docTitle" type="text"><br>
             Creator: <input v-model="creator" type="text"></span>
             <span class="floater-right">Date Created: {{ dateCreated }}<br>
             Last Updated: {{ lastUpdated }} </span><br><br>
@@ -16,9 +16,10 @@
             User Generated Key: <input v-model="userkey" type="text"></span>
             <span class="floater-right">Display Title: <input v-model="displayTitle" type="text"><br>
             Tags: <input v-model="tags" type="text"></span><br><br>
-            First Line: <textarea v-model="firstLine" id="firstline"></textarea><br>
+            First Line: <textarea v-model="firstline" id="firstline"></textarea><br>
             Description: <textarea v-model="description" id="description"></textarea><br>
-            Content: <textarea v-model="content" id="content"></textarea>
+            Content: 
+            <hymn-content formName="hymn"></hymn-content>
         </fieldset>
         <input v-on:submit.prevent="onSubmit" id="submit-button" type=submit></input>
     </form>
@@ -31,7 +32,14 @@
     props: ['hymns'],
     data () {
       return {
-        msg: 'Hymnall',
+        docTitle: "",
+        creator: "",
+        notes:"",
+        userkey: "",
+        displayTitle: "Hymn to the WaterLily",
+        tags: "",
+        firstline: "O beautiful forsaken skies",
+        description: "",
         version: 2,
         lastUpdated: '12/21/17',
         dateCreated: '12/18/17',
@@ -39,7 +47,9 @@
       }
     },
     methods: {
-
+        onSubmit: () => {
+            console.log(this.data)
+        }
     }
   }
 </script>
@@ -101,11 +111,6 @@
 fieldset {
     margin-bottom: 30px;
     border: none;
-}
-
-textarea {
-    width:99%;
-    height:150px;
 }
 
 </style>

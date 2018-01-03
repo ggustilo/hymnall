@@ -11,7 +11,7 @@
 
 <script>
   export default {
-    name: '#sidebar',
+    name: 'sidebar',
     data () {
       return {
         msg: 'Hymnall',

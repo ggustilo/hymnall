@@ -10,20 +10,7 @@
     name: 'app',
     data () {
       return {
-        msg: 'Hymnall',
-        hymns: getHymns()
-      }
-    },
-    methods: {
-      getHymns: () => {
-        return [
-              { 
-                  Title: "Hymn1" 
-              },
-              { 
-                  Title: "Hymn2" 
-              }
-          ]
+        msg: 'Hymnall'
       }
     }
   }
